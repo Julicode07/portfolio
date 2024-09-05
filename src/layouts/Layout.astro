@@ -1,0 +1,49 @@
+---
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta property="og:title" content="Porfolio JuliCode07" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/portfolio/logo.png" />
+    <meta property="og:image:alt" content="JuliCode07" />
+    <meta
+      name="og:description"
+      content="Soy JuliCode07, un desarrollador web apasionado por la programación. Siempre busco mejorar mis habilidades y dar lo mejor de mí en cada proyecto."
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/portfolio/Devto_light.svg"
+      media="(prefers-color-scheme: light)"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/portfolio/Devto_dark.svg"
+      media="(prefers-color-scheme: dark)"
+    />
+    <title>JuliCode07 - Desarrollador Web</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+<style is:global>
+  @font-face {
+    font-family: "Cascadia Code";
+    src: url("../font/Cascadia.ttf") format("opentype");
+    font-style: normal;
+    font-display: swap;
+  }
+
+  html {
+    font-family: "Cascadia Code", sans-serif;
+  }
+</style>
